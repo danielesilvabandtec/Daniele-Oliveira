@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <title>cadastro</title>
+    <link rel="stylesheet" type="text/css"  href="fontes.css" />
+</head>
+<body>
+    <div class= 'imagem'>
+    <div class="navegador">
+        <h1>Designer de Acessorios</h1></div><br><br><br>
+        <div class=" cadastro">
+                <h3>Cadastro de Usuario</h3><br><br><br>
+                <input type=" " placeholder="Nome" id="nome"><br><br>
+                <input type="text" placeholder="Email"id="email"><br><br>
+                <input type="text" placeholder="( )xxxx-xxxx" id="telefone"><br><br>
+                <input type= "password"  placeholder="Senha" id="senha_cad"><br><br>
+                <input type= "password"  placeholder="Confirme sua Senha" id="confirmacao"><br><br>
+                <button onclick="cadastrar()">Cadastre-se</button><br><br>
+        </div>
+        <div class='login'>
+                <h3>Entrar </h3><br><br><br>
+                <input type="text" placeholder="Email" id = "Email_log"><br><br>
+                <input type="password" placeholder="Senha" id= 'senha_log'><br><br>
+                <button onclick="logar()">Entrar</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+function cadastrar(){
+
+if(nome.value =='' ||email.value =='' ||telefone.value==''|| senha_cad.value==''|| confirmacao.value==''){
+    alert("Um dos campos está vazio! :(')");
+    alert ("Verifique se tudo está preeschido corretamentee tente novamente!");
+
+}
+else if (senha_cad.value== confirmacao.value){
+alert('Cadastro concluido com secesso!');
+
+}
+else{
+    alert("as senhas não estam iguais");
+    alert("Verifique se tudo está preeschido corretamentee tente novamente!");
+}
+
+function logar(){
+var login_entrar = Email.log.value;
+var senha_entrar = senha_log.value;
+
+if(login_entrar == "Daniele.silva@gmail.com" && senha_entrar== "1234567"){
+
+    alert("Olá Daniele! :)");
+
+}
+else {
+    alert ("Usuario invalido");
+}
+
+}
+
+}
+
+
+</script>

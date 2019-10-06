@@ -1,0 +1,35 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body*{
+    margin: 0;
+    padding: 0;
+}
+.imagem{
+    background-image: url("https://previews.123rf.com/images/ademka/ademka1602/ademka160200056/53172886-todav%C3%ADa-la-vida-de-la-mujer-de-moda-accesorios-femeninos-modernos-fondo-cosm%C3%A9tica-femenina-sobrecarga-de.jpg");
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.navegador h1{
+    width: 50vw;
+    height: 40vh;
+    margin-left: 33vw;
+    margin-top: 20vh;
+    font: 3em sans-serif;
+}
+.login{
+    text-align: center
+}
+.cadastro{
+    margin-left: 25vw;
+    margin-bottom: 40vh;
+}
